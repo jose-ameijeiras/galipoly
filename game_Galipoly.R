@@ -35,7 +35,7 @@ source(foldergrapint)
 
 #Script with the language
 languagesavail=c("Castellano")
-languagesavail=c("Castellano","Galego","English")
+#languagesavail=c("Castellano","Galego","English")
 languageChoice=GI1()
 if(languageChoice==1){
 folderlan=paste(folder,"laguage_es_Galipoly.R",sep="")}
