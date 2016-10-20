@@ -3,7 +3,7 @@ This is the boarding game Galipoly
 
 1-To play the game
 
-        1a-Download all the R files in the same folder. 
+    1a-Download all the R files in the same folder. 
 
 	1b- Open game_Galipoly.R
   
