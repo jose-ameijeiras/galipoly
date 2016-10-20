@@ -3,11 +3,13 @@ This is the boarding game Galipoly
 
 1-To play the game
 
-	1a- Open game_Galipoly.R
+        1a-Download all the R files in the same folder. 
+
+	1b- Open game_Galipoly.R
   
-	1b- Change in the file the folder direction for where the Complete_Galipoly is downloaded.
+	1c- Change in the file the folder direction for where the Complete_Galipoly is downloaded.
   
-	1c- Execute this script
+	1d- Execute this script
   
 2-To change the street names: names_Galipoly.R
 
