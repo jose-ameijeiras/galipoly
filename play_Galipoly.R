@@ -35,6 +35,7 @@ positions=throwdices[[1]]
 #Was this player in the jail
 if(jail[player]==1){
 prevjail=1
+jail[player]=0
 }else{
 prevjail=0
 }
@@ -123,8 +124,11 @@ boxfunc(positions[player])
 
 }
 
-if(money[player]<=0){
+if(money[player]<=0 & warningout[player]==0){
 GI18()
+warningout[player]=1
+}else{
+warningout[player]=0
 }
 
 #Buy houses and hotels
@@ -139,19 +143,24 @@ while(repeatsell==1){
 source(foldersell)
 }
 
+if(money[player]>0 & warningout[player]==1){
+warningout[player]=0
+}
+
 endit=GI14()
 if(endit==1){
 endofgame=1
 GI15()
 }
 if(endit==2|(money[player]<=0)){
+playerout[player]=1
 money[player]=0
 property[property==player]=0
 houses[property==player]=0
 moneyfunc()
 GI16()
 }
-if(sum(money<=0)>=(nplayers-1)){
+if(sum(playerout==1)>=(nplayers-1)){
 endofgame=1
 GI19()
 }
@@ -166,7 +175,7 @@ player=player-1
 if(player==(nplayers+1)){player=1}
 
 
-while(money[player]<=0){
+while(playerout[player]==1){
 player=player+1
 if(player==(nplayers+1)){player=1}
 }

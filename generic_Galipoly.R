@@ -230,6 +230,11 @@ houses=rep(0,40)
 #Owner of the property
 property=rep(0,40)
 
+#Is this player in the game
+playerout=rep(0,nplayers)
+#If the player has no money (he/she has one extra turn before being removed)
+warningout=rep(0,nplayers)
+
 #Possible movements (chance)
 ch=c(0,-3,16,25,0,0,1,0,0,0,0,12,40,31,0,-2000)
 #Collected and payed money (chance)
