@@ -63,7 +63,7 @@ msgbuild7="Select the number of houses that you want in that street:"
 
 #Messages to sell
 msgsell1="Select a street to sell, mortgage or unmortgage."
-msgsell2="Not make any action"
+msgsell2="Do nothing"
 msgsell4="Collect"
 msgsell5="if you sell."
 msgsell6="if you mortgage."
@@ -88,7 +88,7 @@ msgsell21="Unmortgage the street."
 
 #For writting in the cards
 chancewords=c("Back three positions","Go to jail","Advance to the street","This card has no efect","Get out of jail free")
-comchwords=c(,"Go to jail","Advance to the street","Get out of jail free")
+comchwords=c("Go to jail","Advance to the street","Get out of jail free")
 cchmonwords=c("Collect","Pay","to each player","per house and","per hotel")
 
 #Money
